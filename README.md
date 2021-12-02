@@ -1,3 +1,2 @@
 # algorithm
 algorithm solve
-# eaaa
