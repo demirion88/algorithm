@@ -9,28 +9,54 @@
 # 길이가 1~50인걸 팝 한다.
 # 팝 한걸 정렬해서 결과에 추가한다
 #결과를 리턴한다.
+"""
+13
+but
+i
+wont
+hesitate
+no
+more
+no
+more
+it
+cannot
+wait
+im
+yours
+"""
+#
+# # 정렬?
+# sub = []
+# N = int(input())
+# for _ in range(N):
+#     sub.append(input())
+#
+# sub = list(set(sub))
+#
+#
+# sub.sort(key=str.lower)
+# print(sub)
+# sub.sort(key=len)
+# print("---")
+# print(sub)
+#
+# stranswer = str()
+# for i in range(0, len(sub)):
+#     stranswer += sub[i] + "\n"
+# print(stranswer)
+#
+#
 
-sub = []
-ans = []
-N = int(input())
-for _ in range(N):
-    sub.append(input())
+# from sys import stdin
+# read = stdin.readline().rstrip()
+# for _ in range(int(input())):
+#     print(read)
+# from sys import stdin
+# lists = (stdin.readline().rstrip() for i in range(int(input())))
+# print(lists)
+#
+# lists = set(stdin.readline().rstrip() for i in range(int(input())))
+# print('\n'.join(sorted(lists, key=lambda x: (len(x), x))))
 
-sub = list(set(sub))
 
-
-def popAndAdd(lst):
-    for i in range(1, 51):
-        midans = []
-        for j in range(0, len(sub)):
-            if len(sub[j]) == i:
-                midans.append(sub[j])
-        midans.sort()
-        for k in range(0,len(midans)):
-            ans.append(midans[k])
-    return ans
-
-stranswer = str()
-for i in range(0, len(popAndAdd(sub))):
-    stranswer += popAndAdd(sub)[i] + "\n"
-print(stranswer)
