@@ -17,8 +17,6 @@ while p[A] > 0:
     A = p[A]
 Aa.append((A, Ad))
 
-
-
 while p[B] > 0:
     Ba.append((B, Bd))
     Bd += 1
